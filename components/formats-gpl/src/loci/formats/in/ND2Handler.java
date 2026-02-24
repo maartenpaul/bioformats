@@ -721,7 +721,7 @@ public class ND2Handler extends BaseHandler {
               }
             }
           }
-          else if (runtype.endsWith("XYPosLoop") && core.size() == 1) {
+          else if ((runtype.endsWith("XYPosLoop") || runtype.endsWith("CustomLoop")) && core.size() == 1) {
             int len = Integer.parseInt(value);
             core = new CoreMetadataList();
             for (int i=0; i<len; i++) {

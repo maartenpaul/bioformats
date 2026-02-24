@@ -1011,7 +1011,7 @@ public class ND2Reader extends SubResolutionFormatReader {
 
                   if(!currentCountSetted)
                   {
-                    if(eType == 2)
+                    if(eType == 2 || eType == 7)
                     {
                       imageMetadataLVOrder = "M" + imageMetadataLVOrder;
                       XYCount = in.readInt();
